@@ -8,11 +8,12 @@ Requires Obsidian 1.5.7 or later.
 
 Once suToDoku is listed in the community catalog, open **Settings → Community plugins → Browse**, search for **suToDoku**, then install and enable it.
 
-For a manual installation, use `suToDoku.zip` from GitHub Releases or a local release package in `dist/`.
+### Manual installation or update
 
-1. If you're updating an earlier manual installation, disable suToDoku and move its old plugin folder (`suToDoku` or `open-window-64`) out of your vault's plugins directory before copying the new one. Leave your `.mandala` plans where they are.
-2. Extract the ZIP and copy the included `sutodoku` folder into your vault's plugins directory (`.obsidian/plugins` by default).
-3. Restart Obsidian and enable **suToDoku** under **Community plugins**.
+1. Download `main.js`, `manifest.json` and `styles.css`. [Latest GitHub release](https://github.com/enikeevtg/sutodoku/releases/latest)
+2. If you're updating, disable suToDoku. Move any legacy plugin folder named `suToDoku` or `open-window-64` out of your vault's plugins directory. Leave your `.mandala` plans where they are.
+3. Place the three files in the `sutodoku` folder in your vault's plugins directory (`.obsidian/plugins` by default). Create the folder if needed.
+4. Restart Obsidian and enable **suToDoku** under **Community plugins**.
 
 Click the nine-square ribbon icon or run **suToDoku: Create plan** from the command palette to get started.
 
@@ -81,6 +82,8 @@ npm run build
 ```
 
 `npm run dev` watches for source changes. To install a local build, copy `main.js`, `manifest.json` and `styles.css` into a `sutodoku` folder in your vault's plugins directory.
+
+Pushing a tag that matches the version in `manifest.json` runs the tests, builds and attests the release files, and publishes them on GitHub.
 
 ## Limitations
 
