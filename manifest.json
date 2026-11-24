@@ -1,0 +1,9 @@
+{
+  "id": "sutodoku",
+  "name": "suToDoku",
+  "version": "1.5.1",
+  "minAppVersion": "1.5.7",
+  "description": "Plan one goal through eight directions and 64 steps, with confirmation history and an archive.",
+  "author": "tiger-moon",
+  "isDesktopOnly": false
+}
