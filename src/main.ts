@@ -448,8 +448,8 @@ class MandalaView extends FileView {
       this.iconButton(actions, 'trash-2', `Delete: ${options.placeholder}`, 'ow-delete-step', () => remove(false));
     } else if (target.kind === 'goal') {
       this.iconButton(actions, 'archive', 'Open plan archive', 'ow-open-archive', () => this.openArchive());
-    } else if (options.position === 4) {
-      this.iconButton(actions, 'archive', `Archive: ${options.placeholder}`, 'ow-open-archive', () => this.openArchive(target.area));
+    } else {
+      this.iconButton(actions, 'archive', `Open archive for ${options.text || options.placeholder}`, 'ow-open-archive', () => this.openArchive(target.area));
     }
     if (options.completion) {
       const completion = options.completion;

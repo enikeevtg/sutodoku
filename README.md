@@ -43,7 +43,7 @@ Only filled, confirmed steps can be archived. Click the archive button on a step
 
 Click the archive button on the main goal card to see entries from all directions. Each row shows its direction and matches the current color of that direction's center card.
 
-Click the archive button in the center of a direction block to view its archive. The table contains:
+Click the archive button on a direction card in the central block or in the center of its own block to view that direction's archived steps. The table contains:
 
 - Card text
 - Creation date and time
